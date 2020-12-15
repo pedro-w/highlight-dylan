@@ -5,6 +5,11 @@ language. It is dynamic while providing a programming model designed
 to support efficient machine code generation, including fine-grained
 control over dynamic and static behaviors.
 
+# Example
+
+    var dylanGrammar = require('highlight-dylan')
+    hljs.registerLanguage('dylan', dylanGrammar)
+
 See https://github.com/highlightjs/highlight.js
 and https://opendylan.org/
 

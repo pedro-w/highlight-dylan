@@ -73,8 +73,4 @@ function hljsDefineDylan(hljs) {
     return DYLAN_CODE;
 }
 
-module.exports = function(hljs) {
-    hljs.registerLanguage('dylan', hljsDefineDylan);
-};
-
-module.exports.definer = hljsDefineDylan;
+module.exports = hljsDefineDylan;

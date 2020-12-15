@@ -1,10 +1,9 @@
 const hljs = require("highlight.js/lib/highlight");
-const {
-    definer: dylan
-} = require("../dylan");
+const dylanGrammar = require("../dylan");
 const fs = require("fs");
 const path = require("path");
-hljs.registerLanguage("dylan", dylan);
+
+hljs.registerLanguage("dylan", dylanGrammar);
 
 describe("respec-highlight bundle", () => {
     it("highlights dylan", () => {
